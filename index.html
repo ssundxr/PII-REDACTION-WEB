@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privara | World's First Multimodal PII Redaction System | DPDP, GDPR, HIPAA Compliant</title>
-  <meta name="description" content="Global leader in automated PII redaction by Privara Labs. Multimodal AI for banks, healthcare, and research. DPDP (India), GDPR (EU), HIPAA (US) compliant. Alliance University E-Cell Startup.">
+  <title>Privara | Automated Visual Document PII Redaction System | DPDP, GDPR, HIPAA Compliant</title>
+  <meta name="description" content="Automated PII redaction by Privara Labs. Multimodal AI for banks, healthcare, and research. DPDP (India), GDPR (EU), HIPAA (US) compliant. Alliance University E-Cell Startup.">
   <meta name="keywords" content="PII redaction, multimodal AI, GDPR, HIPAA, DPDP, global compliance, banking, healthcare, research data privacy, Privara Labs">
   
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@600;700&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
 </head>
@@ -61,7 +61,7 @@
             <i class="fas fa-award"></i> World's First Multimodal PII Redaction Solution
           </div>
           
-          <h1>Enterprise Document Privacy<br>Through Advanced AI</h1>
+          <h1>Automated Visual Document<br>PII Redaction System</h1>
           
           <p class="hero-description">
             Privara delivers automated PII protection for banking, healthcare, and research institutions worldwide. The only platform combining TrOCR, YOLO, and LayoutLMv3 with federated learning and differential privacy mechanisms for regulatory compliance.
@@ -92,14 +92,20 @@
           </div>
 
           <div class="global-coverage">
-            <span class="coverage-label">Deployed Across:</span>
-            <div class="country-flags">
-              <span title="India">🇮🇳</span>
-              <span title="European Union">🇪🇺</span>
-              <span title="United States">🇺🇸</span>
-              <span title="United Kingdom">🇬🇧</span>
-              <span title="Singapore">🇸🇬</span>
-              <span title="UAE">🇦🇪</span>
+            <span class="coverage-label">Compliant Under:</span>
+            <div class="compliance-flags">
+              <div class="flag-item">
+                <span class="flag-icon">🇮🇳</span>
+                <span class="flag-label">DPDP Act</span>
+              </div>
+              <div class="flag-item">
+                <span class="flag-icon">🇪🇺</span>
+                <span class="flag-label">GDPR</span>
+              </div>
+              <div class="flag-item">
+                <span class="flag-icon">🇺🇸</span>
+                <span class="flag-label">HIPAA</span>
+              </div>
             </div>
           </div>
         </div>
@@ -183,21 +189,21 @@
       </div>
 
       <div class="unique-advantage">
-        <h3><i class="fas fa-check-circle"></i> The Privara Advantage</h3>
+        <h3><i class="fas fa-key"></i> Key Privacy Differentiators</h3>
         <p>While competitors rely on single OCR engines achieving 70-80% accuracy, Privara combines three specialized models for 95%+ accuracy. Our system detects both field labels AND values—essential for banking KYC, medical records, and research data compliance.</p>
         <div class="advantage-grid">
           <div class="adv-box">
             <i class="fas fa-network-wired"></i>
             <div>
               <strong>Federated Learning</strong>
-              <span>Model improvements without data sharing</span>
+              <span>Model improvements without data sharing—updates remain decentralized across client environments</span>
             </div>
           </div>
           <div class="adv-box">
             <i class="fas fa-user-lock"></i>
             <div>
               <strong>Differential Privacy</strong>
-              <span>Mathematical anonymization guarantees</span>
+              <span>Mathematical anonymization guarantees—audit logs protect individual data patterns</span>
             </div>
           </div>
         </div>
@@ -421,32 +427,32 @@
           </div>
 
           <div class="social-links">
-            <a href="https://github.com/ssundxr/PII_Redaction" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ssundxr" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sundxrr" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
 
         <div class="contact-form">
-          <form action="#" method="POST">
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="form-grid">
               <div class="form-group">
                 <label>Full Name *</label>
-                <input type="text" required>
+                <input type="text" name="name" required>
               </div>
               <div class="form-group">
                 <label>Email Address *</label>
-                <input type="email" required>
+                <input type="email" name="email" required>
               </div>
             </div>
 
             <div class="form-grid">
               <div class="form-group">
                 <label>Organization</label>
-                <input type="text">
+                <input type="text" name="organization">
               </div>
               <div class="form-group">
                 <label>Industry *</label>
-                <select required>
+                <select name="industry" required>
                   <option value="">Select...</option>
                   <option>Banking & Finance</option>
                   <option>Healthcare</option>
@@ -460,8 +466,13 @@
 
             <div class="form-group">
               <label>Message</label>
-              <textarea rows="4"></textarea>
+              <textarea name="message" rows="4"></textarea>
             </div>
+
+            <input type="hidden" name="_next" value="https://your-domain.pages.dev/thank-you.html">
+            <input type="hidden" name="_subject" value="New Demo Request from Privara Website">
+            <input type="hidden" name="_cc" value="sundxrr@gmail.com">
+            <input type="hidden" name="_autoresponse" value="Thank you for contacting Privara! We've received your request and will respond within 24 hours.">
 
             <button type="submit" class="btn btn-primary btn-block">
               <i class="fas fa-paper-plane"></i> Submit Request
