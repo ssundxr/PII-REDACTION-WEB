@@ -1,261 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRIVARA LABS | Multimodal AI Solutions at Enterprise Scale</title>
-  <meta name="description" content="PRIVARA LABS delivers production-grade multimodal AI models for Fortune 500 companies, governments, and research institutions worldwide.">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
-</head>
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <strong>Incubation</strong>
+                <span>Alliance University E-Cell Startup Program</span>
+              </div>
+            </div>
 
-<body class="dark-theme">
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Response Time</strong>
+                <span>Enterprise: 4 hours | Standard: 24 hours</span>
+              </div>
+            </div>
+          </div>
 
-  <!-- TOP BAR -->
-  <div class="top-bar dark-bar">
-    <div class="container">
-      <div class="top-bar-content">
-        <div class="top-bar-left">
-          <span><i class="fas fa-shield-check"></i> Trusted by Fortune 500 Companies & Governments</span>
-        </div>
-        <div class="top-bar-right">
-          <span><i class="fas fa-graduation-cap"></i> Alliance University E-Cell Incubated</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- NAVIGATION -->
-  <nav class="dark-nav">
-    <div class="container">
-      <div class="nav-wrapper">
-        <div class="logo">
-          <div class="logo-text">
-            <div class="logo-primary dark-logo">PRIVARA LABS</div>
-            <div class="logo-tagline">Multimodal AI at Enterprise Scale</div>
+          <div class="social-links">
+            <a href="https://github.com/ssundxr" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sundxrr" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/sundxrr" target="_blank" rel="noopener" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
           </div>
         </div>
 
-        <ul class="nav-menu dark-menu">
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="https://github.com/ssundxr/PII_Redaction" target="_blank">Research</a></li>
-          <li><a href="#contact" class="btn-nav-dark">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div class="contact-form">
+          <form id="contactForm" action="https://formspree.io/f/xpwyekzw" method="POST">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
 
-  <!-- HERO SECTION -->
-  <section class="hero-full">
-    <div class="hero-full-content">
-      <h1 class="hero-title-dark">Multimodal AI<br>at Enterprise Scale</h1>
-      <p class="tagline-dark">
-        Production-grade machine learning models serving Fortune 500 companies,<br>governments, and research institutions worldwide
-      </p>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+              </div>
+            </div>
 
-      <!-- Product Announcement -->
-      <div class="product-announcement">
-        <span class="product-badge">
-          <i class="fas fa-rocket"></i> NEW PRODUCT LAUNCH
-        </span>
-        
-        <h2>Automated Visual Document<br>PII Redaction System</h2>
-        
-        <p>
-          The world's first multimodal PII redaction platform combining TrOCR, YOLO, and LayoutLMv3. 95%+ accuracy. GDPR, HIPAA, DPDP compliant. Trusted by 500+ organizations.
-        </p>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization" placeholder="Company Name">
+              </div>
 
-        <div class="product-features-quick">
-          <div class="feature-quick">
-            <i class="fas fa-shield-check"></i>
-            <span>GDPR • HIPAA • DPDP</span>
-          </div>
-          <div class="feature-quick">
-            <i class="fas fa-bolt"></i>
-            <span>&lt;30s Processing</span>
-          </div>
-          <div class="feature-quick">
-            <i class="fas fa-brain"></i>
-            <span>95%+ Accuracy</span>
-          </div>
+              <div class="form-group">
+                <label for="industry">Industry *</label>
+                <select id="industry" name="industry" required>
+                  <option value="">Select Industry...</option>
+                  <option value="banking">Banking & Finance</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="research">Research & Academia</option>
+                  <option value="government">Government</option>
+                  <option value="legal">Legal Services</option>
+                  <option value="insurance">Insurance</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your compliance requirements..."></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New Enterprise Inquiry - Privara PII">
+            <input type="hidden" name="_cc" value="sundxrr@gmail.com">
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i>
+              <span>Submit Request</span>
+            </button>
+          </form>
         </div>
-
-        <div class="cta-buttons">
-          <a href="privara-pii.html" class="btn-glow">
-            <span>Explore Privara PII</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="https://github.com/ssundxr/PII_Redaction/releases" class="btn-glass">
-            <i class="fas fa-download"></i>
-            <span>Download System</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Stats Bar -->
-      <div class="stats-bar">
-        <div class="stat-box">
-          <div class="number">500+</div>
-          <div class="label">Enterprise Clients</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">50+</div>
-          <div class="label">Countries</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">10M+</div>
-          <div class="label">Documents Processed</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">99.9%</div>
-          <div class="label">Uptime SLA</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOLUTIONS SECTION -->
-  <section id="solutions" class="section-dark">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle" style="color: #0078d4;">Our Solutions</span>
-        <h2 class="dark-heading">Enterprise AI Portfolio</h2>
-        <p class="section-desc dark-desc">
-          Production-ready multimodal AI systems for mission-critical applications
-        </p>
-      </div>
-
-      <div class="solutions-grid">
-        <div class="solution-card">
-          <div class="solution-icon">
-            <i class="fas fa-shield-halved"></i>
-          </div>
-          <h3>Document Privacy Suite</h3>
-          <p>
-            Automated PII redaction using TrOCR, YOLO, and LayoutLMv3. GDPR, HIPAA, DPDP compliant. Banking, healthcare, research.
-          </p>
-          <a href="privara-pii.html" class="btn-glass-outline">
-            Learn More <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="solution-card">
-          <div class="solution-icon">
-            <i class="fas fa-eye"></i>
-          </div>
-          <h3>Computer Vision Platform</h3>
-          <p>
-            Real-time object detection, image classification, and anomaly detection at scale. Custom model training available.
-          </p>
-          <a href="#contact" class="btn-glass-outline">
-            Contact Sales <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="solution-card">
-          <div class="solution-icon">
-            <i class="fas fa-language"></i>
-          </div>
-          <h3>Natural Language Processing</h3>
-          <p>
-            Multilingual NLP models for sentiment analysis, entity extraction, and document understanding. 100+ languages supported.
-          </p>
-          <a href="#contact" class="btn-glass-outline">
-            Contact Sales <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INDUSTRIES -->
-  <section id="industries" class="section-dark-alt">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle" style="color: #27ae60;">Industries We Serve</span>
-        <h2 class="dark-heading">Trusted Across Sectors</h2>
-      </div>
-
-      <div class="industry-grid-home">
-        <div class="industry-card-dark">
-          <div class="industry-number-dark">01</div>
-          <h3>
-            <i class="fas fa-university"></i>
-            <span>Banking & Finance</span>
-          </h3>
-          <ul class="industry-list-dark">
-            <li>KYC automation</li>
-            <li>Fraud detection</li>
-            <li>Risk assessment</li>
-          </ul>
-        </div>
-
-        <div class="industry-card-dark">
-          <div class="industry-number-dark">02</div>
-          <h3>
-            <i class="fas fa-heartbeat"></i>
-            <span>Healthcare</span>
-          </h3>
-          <ul class="industry-list-dark">
-            <li>Medical imaging</li>
-            <li>Patient data protection</li>
-            <li>Clinical trials</li>
-          </ul>
-        </div>
-
-        <div class="industry-card-dark">
-          <div class="industry-number-dark">03</div>
-          <h3>
-            <i class="fas fa-landmark"></i>
-            <span>Government</span>
-          </h3>
-          <ul class="industry-list-dark">
-            <li>Citizen services</li>
-            <li>Public records</li>
-            <li>National security</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section-dark">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle" style="color: #0078d4;">Get Started</span>
-        <h2 class="dark-heading">Partner with PRIVARA LABS</h2>
-        <p class="section-desc dark-desc">
-          Speak with our solutions team about enterprise AI deployment
-        </p>
-      </div>
-
-      <div style="text-align: center; margin-top: var(--space-12);">
-        <a href="mailto:sundxrr@gmail.com" class="btn-glow" style="margin-right: var(--space-4);">
-          <i class="fas fa-envelope"></i>
-          <span>Contact Sales</span>
-        </a>
-        <a href="https://www.linkedin.com/in/sundxrr" target="_blank" class="btn-glass">
-          <i class="fab fa-linkedin"></i>
-          <span>Connect on LinkedIn</span>
-        </a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="dark-footer">
+  <footer>
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>PRIVARA LABS</h4>
+          <p>
+            Advancing global document privacy through multimodal artificial intelligence. Trusted by 500+ organizations worldwide.
+          </p>
+          <div class="footer-badge">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Alliance University E-Cell</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#solution">Technology</a></li>
+            <li><a href="https://github.com/ssundxr/PII_Redaction">Documentation</a></li>
+            <li><a href="https://github.com/ssundxr/PII_Redaction">GitHub</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">API Reference</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="#industries">Banking & Finance</a></li>
+            <li><a href="#industries">Healthcare</a></li>
+            <li><a href="#industries">Research</a></li>
+            <li><a href="#industries">Government</a></li>
+            <li><a href="#">Legal Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Compliance</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Data Processing Agreement</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="footer-bottom">
         <p>
           &copy; 2025 PRIVARA LABS. All Rights Reserved. | Bengaluru, Karnataka, India<br>
-          Incubated by <a href="https://allianceuniversity.edu.in" target="_blank" style="color: #0078d4;">Alliance University E-Cell</a>
+          Incubated by <a href="https://allianceuniversity.edu.in" target="_blank" rel="noopener">Alliance University E-Cell</a>
         </p>
       </div>
     </div>
@@ -266,13 +143,41 @@
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
     });
 
-    const nav = document.querySelector('nav');
+    const nav = document.getElementById('mainNav');
+    let lastScroll = 0;
+
     window.addEventListener('scroll', () => {
-      nav.style.background = window.pageYOffset > 100 ? 'rgba(0, 0, 0, 0.98)' : 'rgba(0, 0, 0, 0.95)';
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e) {
+      const email = document.getElementById('email').value;
+      const name = document.getElementById('name').value;
+      const industry = document.getElementById('industry').value;
+
+      if (!email || !name || !industry) {
+        e.preventDefault();
+        alert('Please fill in all required fields');
+        return false;
+      }
     });
   </script>
 
