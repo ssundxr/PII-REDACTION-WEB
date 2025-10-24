@@ -1,719 +1,595 @@
-              <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privara PII | Automated Visual Document PII Redaction System | PRIVARA LABS</title>
-  <meta name="description" content="World's first multimodal PII redaction platform. 95%+ accuracy. GDPR, HIPAA, DPDP compliant. Trusted by 500+ organizations.">
+  <title>Privara PII | Enterprise Document Privacy | PRIVARA LABS</title>
+  <meta name="description" content="Enterprise-grade multimodal PII redaction platform. 95%+ accuracy. GDPR, HIPAA, DPDP compliant. Trusted by 500+ organizations.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-content">
-        <div class="top-bar-left">
-          <span><i class="fas fa-shield-check"></i> Privara PII Redact AI from Privara Labs</span>
-          <span><i class="fas fa-certificate"></i> ISO 27001 Ready | SOC 2 Track</span>
-        </div>
-        <div class="top-bar-right">
-          <span><i class="fas fa-graduation-cap"></i> Alliance University E-Cell Incubated</span>
-        </div>
+  <nav class="enterprise-nav">
+    <div class="container-nav">
+      <div class="nav-brand">
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+          <span class="brand-name">PRIVARA LABS</span>
+        </a>
       </div>
-    </div>
-  </div>
-
-  <!-- NAVIGATION -->
-  <nav role="navigation" id="mainNav">
-    <div class="container">
-      <div class="nav-wrapper">
-        <div class="logo">
-          <div class="logo-text">
-            <a href="index.html" style="text-decoration: none;">
-              <div class="logo-primary" style="font-size: 1.5rem; font-weight: 900;">PRIVARA LABS</div>
-            </a>
-            <div class="logo-tagline">Enterprise Document Security</div>
-          </div>
-        </div>
-
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about">Overview</a></li>
-          <li><a href="#solution">Technology</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#compliance">Compliance</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact" class="btn-nav">Get Started</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#compliance">Compliance</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header id="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <i class="fas fa-award"></i>
-            <span>World's First Multimodal PII Redaction Platform</span>
-          </div>
-          
-          <h1>Automated Visual Document PII Redaction System</h1>
-          
-          <p class="hero-description">
-            Privara delivers automated PII protection for banking, healthcare, and research institutions worldwide. The only platform combining TrOCR, YOLO, and LayoutLMv3 for 95%+ accuracy in GDPR, HIPAA, and DPDP compliance.
-          </p>
+  <section class="hero-enterprise" style="padding: 140px 0 80px;">
+    <div class="container-hero">
+      <div class="hero-content-enterprise">
+        <div style="display: inline-flex; align-items: center; gap: 12px; background: var(--neutral-100); padding: 8px 20px; border-radius: 50px; margin-bottom: 24px;">
+          <i class="fas fa-award" style="color: var(--primary-blue);"></i>
+          <span style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">World's First Multimodal PII Redaction Platform</span>
+        </div>
+        
+        <h1 class="hero-title-main">Privara PII<br>Enterprise Document Privacy</h1>
+        
+        <p class="hero-subtitle">Automated PII protection for banking, healthcare, and research institutions. The only platform combining TrOCR, YOLO, and LayoutLMv3 for 95%+ accuracy in GDPR, HIPAA, and DPDP compliance.</p>
 
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-value">95%+</div>
-              <div class="stat-label">Detection Accuracy</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-value">&lt;30s</div>
-              <div class="stat-label">Processing Time</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-value">500+</div>
-              <div class="stat-label">Enterprise Clients</div>
-            </div>
+        <div class="hero-stats-inline">
+          <div class="stat-inline">
+            <span class="stat-number">95%+</span>
+            <span class="stat-label">Accuracy</span>
           </div>
-
-          <div class="hero-cta">
-            <a href="https://github.com/ssundxr/PII_Redaction/releases" class="btn btn-primary btn-lg">
-              <i class="fas fa-download"></i>
-              <span>Download System</span>
-            </a>
-            <a href="#contact" class="btn btn-secondary btn-lg">
-              <i class="fas fa-calendar-check"></i>
-              <span>Request Demo</span>
-            </a>
+          <div class="stat-inline">
+            <span class="stat-number">&lt;30s</span>
+            <span class="stat-label">Processing</span>
           </div>
-
-          <div class="global-coverage">
-            <span class="coverage-label">Global Regulatory Compliance</span>
-            <div class="compliance-flags">
-              <div class="flag-item">
-                <span class="flag-icon">🇮🇳</span>
-                <span class="flag-label">DPDP Act 2023</span>
-              </div>
-              <div class="flag-item">
-                <span class="flag-icon">🇪🇺</span>
-                <span class="flag-label">GDPR</span>
-              </div>
-              <div class="flag-item">
-                <span class="flag-icon">🇺🇸</span>
-                <span class="flag-label">HIPAA</span>
-              </div>
-              <div class="flag-item">
-                <span class="flag-icon">🇬🇧</span>
-                <span class="flag-label">UK GDPR</span>
-              </div>
-            </div>
+          <div class="stat-inline">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Clients</span>
+          </div>
+          <div class="stat-inline">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Countries</span>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section-white">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle">The Global Compliance Challenge</span>
-        <h2>Why Organizations Choose Privara</h2>
-        <p class="section-desc">
-          Regulatory penalties, data breaches, and compliance complexity threaten organizations worldwide. Manual redaction fails 89% of audits.
-        </p>
-      </div>
-
-      <div class="challenge-grid">
-        <div class="challenge-card">
-          <div class="challenge-number">01</div>
-          <h3>€1.3B+ Annual GDPR
-            Fines</h3>
-          <p>
-            European regulators issued record fines in 2024. India's DPDP Act introduces ₹250 Cr penalties. Non-compliance costs exceed implementation by 400%.
-          </p>
+        <div class="hero-actions">
+          <a href="https://github.com/ssundxr/PII_Redaction/releases" class="btn-primary-enterprise">
+            <i class="fas fa-download"></i> Download System
+          </a>
+          <a href="#contact" class="btn-secondary-enterprise">
+            <i class="fas fa-calendar-check"></i> Request Demo
+          </a>
         </div>
 
-        <div class="challenge-card">
-          <div class="challenge-number">02</div>
-          <h3>$10.9M Healthcare Breaches</h3>
-          <p>
-            Average HIPAA data breach cost in 2024. Healthcare sector faces 45% of global cyberattacks. Medical records command highest black market prices.
-          </p>
-        </div>
-
-        <div class="challenge-card">
-          <div class="challenge-number">03</div>
-          <h3>89% Audit Failure Rate</h3>
-          <p>
-            Most financial institutions fail PII audits due to manual errors. Cloud-based tools risk data exposure. On-device processing is now mandatory.
-          </p>
+        <div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--neutral-200);">
+          <p style="font-size: 13px; color: var(--neutral-700); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">Global Regulatory Compliance</p>
+          <div style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;">
+            <div style="text-align: center;">
+              <span style="font-size: 32px;">🇮🇳</span>
+              <p style="font-size: 12px; font-weight: 700; color: var(--neutral-700); margin-top: 4px;">DPDP Act 2023</p>
+            </div>
+            <div style="text-align: center;">
+              <span style="font-size: 32px;">🇪🇺</span>
+              <p style="font-size: 12px; font-weight: 700; color: var(--neutral-700); margin-top: 4px;">GDPR</p>
+            </div>
+            <div style="text-align: center;">
+              <span style="font-size: 32px;">🇺🇸</span>
+              <p style="font-size: 12px; font-weight: 700; color: var(--neutral-700); margin-top: 4px;">HIPAA</p>
+            </div>
+            <div style="text-align: center;">
+              <span style="font-size: 32px;">🇬🇧</span>
+              <p style="font-size: 12px; font-weight: 700; color: var(--neutral-700); margin-top: 4px;">UK GDPR</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SOLUTION -->
-  <section id="solution" class="section-gray">
+  <section class="trust-bar">
     <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle">Technology Architecture</span>
-        <h2>Three AI Models, One Unified System</h2>
-        <p class="section-desc">
-          The only platform combining TrOCR, YOLO, and LayoutLMv3—a unique architecture deployed exclusively by Privara
-        </p>
+      <p class="trust-text">Trusted by leading organizations worldwide</p>
+      <div class="trust-badges">
+        <div class="badge-item">
+          <i class="fas fa-shield-check"></i>
+          <span>SOC 2 Track</span>
+        </div>
+        <div class="badge-item">
+          <i class="fas fa-lock"></i>
+          <span>ISO 27001 Ready</span>
+        </div>
+        <div class="badge-item">
+          <i class="fas fa-certificate"></i>
+          <span>GDPR Compliant</span>
+        </div>
+        <div class="badge-item">
+          <i class="fas fa-hospital"></i>
+          <span>HIPAA Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overview" class="section-white-enterprise">
+    <div class="container">
+      <div class="section-header-enterprise">
+        <span class="section-label">The Compliance Challenge</span>
+        <h2>Why Organizations Choose Privara</h2>
+        <p class="section-description">Regulatory penalties, data breaches, and compliance complexity threaten organizations worldwide</p>
       </div>
 
-      <div class="tech-showcase">
-        <div class="tech-card">
-          <div class="tech-number">01</div>
-          <h3>
+      <div class="solutions-enterprise-grid">
+        <div class="solution-enterprise-card">
+          <div class="solution-icon-enterprise">
+            <i class="fas fa-gavel"></i>
+          </div>
+          <h3>€1.3B+ Annual GDPR Fines</h3>
+          <p>European regulators issued record fines in 2024. India's DPDP Act introduces ₹250 Cr penalties. Non-compliance costs exceed implementation by 400%.</p>
+        </div>
+
+        <div class="solution-enterprise-card">
+          <div class="solution-icon-enterprise">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <h3>$10.9M Healthcare Breaches</h3>
+          <p>Average HIPAA data breach cost in 2024. Healthcare sector faces 45% of global cyberattacks. Medical records command highest black market prices.</p>
+        </div>
+
+        <div class="solution-enterprise-card">
+          <div class="solution-icon-enterprise">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <h3>89% Audit Failure Rate</h3>
+          <p>Most financial institutions fail PII audits due to manual errors. Cloud-based tools risk data exposure. On-device processing is now mandatory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technology" class="section-gray-enterprise">
+    <div class="container">
+      <div class="section-header-enterprise">
+        <span class="section-label">Technology Architecture</span>
+        <h2>Three AI Models, One Unified System</h2>
+        <p class="section-description">The only platform combining TrOCR, YOLO, and LayoutLMv3 for comprehensive document intelligence</p>
+      </div>
+
+      <div class="solutions-enterprise-grid">
+        <div class="solution-enterprise-card">
+          <div class="solution-icon-enterprise">
             <i class="fas fa-brain"></i>
-            <span>TrOCR: Transformer OCR</span>
-          </h3>
-          <p>
-            Microsoft's state-of-the-art optical character recognition extracts text from printed and handwritten documents with 97% accuracy across 50+ languages including Hindi, Tamil, Arabic, and Chinese.
-          </p>
-          <ul class="tech-list">
+          </div>
+          <h3>TrOCR: Transformer OCR</h3>
+          <p>Microsoft's state-of-the-art optical character recognition extracts text from printed and handwritten documents with 97% accuracy across 50+ languages including Hindi, Tamil, Arabic, and Chinese.</p>
+          <ul class="feature-list-enterprise">
             <li>Multilingual text extraction</li>
             <li>Handwriting recognition</li>
             <li>Key-value pair detection</li>
-            <li>Context-aware field identification</li>
+            <li>Context-aware identification</li>
           </ul>
         </div>
 
-        <div class="tech-card">
-          <div class="tech-number">02</div>
-          <h3>
+        <div class="solution-enterprise-card">
+          <div class="solution-icon-enterprise">
             <i class="fas fa-eye"></i>
-            <span>YOLO: Visual Detection</span>
-          </h3>
-          <p>
-            Ultralytics YOLOv8 identifies photographs, signatures, seals, and visual PII at 60 FPS with sub-second latency for enterprise-scale document processing workflows.
-          </p>
-          <ul class="tech-list">
+          </div>
+          <h3>YOLO: Visual Detection</h3>
+          <p>Ultralytics YOLOv8 identifies photographs, signatures, seals, and visual PII at 60 FPS with sub-second latency for enterprise-scale document processing workflows.</p>
+          <ul class="feature-list-enterprise">
             <li>Real-time photo detection</li>
             <li>Signature identification</li>
-            <li>Seal and stamp recognition</li>
-            <li>QR code and barcode masking</li>
+            <li>Seal recognition</li>
+            <li>QR code masking</li>
           </ul>
         </div>
 
-        <div class="tech-card">
-          <div class="tech-number">03</div>
-          <h3>
+        <div class="solution-enterprise-card">
+          <div class="solution-icon-enterprise">
             <i class="fas fa-sitemap"></i>
-            <span>LayoutLMv3: Document Intelligence</span>
-          </h3>
-          <p>
-            Microsoft's layout understanding model links field labels to values in complex forms—the critical capability missing from traditional redaction tools.
-          </p>
-          <ul class="tech-list">
+          </div>
+          <h3>LayoutLMv3: Document Intelligence</h3>
+          <p>Microsoft's layout understanding model links field labels to values in complex forms—the critical capability missing from traditional redaction tools.</p>
+          <ul class="feature-list-enterprise">
             <li>Form structure analysis</li>
             <li>Table data extraction</li>
             <li>Context-aware redaction</li>
-            <li>Multi-page document processing</li>
+            <li>Multi-page processing</li>
           </ul>
         </div>
       </div>
 
-      <div class="unique-advantage">
-        <h3>
-          <i class="fas fa-key"></i>
-          <span>Enterprise Privacy Architecture</span>
-        </h3>
-        <p>
+      <div style="background: var(--white); padding: 48px; border-radius: 8px; border: 1px solid var(--neutral-200); margin-top: 48px;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+          <i class="fas fa-key" style="font-size: 32px; color: var(--primary-blue);"></i>
+          <h3 style="font-size: 28px; font-weight: 700; color: var(--primary-dark); margin: 0;">Enterprise Privacy Architecture</h3>
+        </div>
+        <p style="color: var(--neutral-700); line-height: 1.7; font-size: 16px; margin-bottom: 32px;">
           While competitors rely on single OCR engines achieving 70-80% accuracy, Privara combines three specialized models for 95%+ accuracy. Our system detects both field labels AND values—essential for banking KYC, medical records, and research data compliance.
         </p>
         
-        <div class="advantage-grid">
-          <div class="adv-box">
-            <i class="fas fa-network-wired"></i>
-            <div class="adv-box-content">
-              <strong>Federated Learning</strong>
-              <span>Model improvements without data sharing—updates remain decentralized across client environments</span>
-            </div>
+        <div class="tech-grid-enterprise">
+          <div class="tech-card-enterprise">
+            <h4><i class="fas fa-network-wired" style="color: var(--primary-blue); margin-right: 12px;"></i>Federated Learning</h4>
+            <p style="color: var(--neutral-700); font-size: 14px; line-height: 1.6;">Model improvements without data sharing—updates remain decentralized across client environments</p>
           </div>
-
-          <div class="adv-box">
-            <i class="fas fa-user-lock"></i>
-            <div class="adv-box-content">
-              <strong>Differential Privacy</strong>
-              <span>Mathematical anonymization guarantees—audit logs protect individual data patterns per GDPR Article 25</span>
-            </div>
+          <div class="tech-card-enterprise">
+            <h4><i class="fas fa-user-lock" style="color: var(--primary-blue); margin-right: 12px;"></i>Differential Privacy</h4>
+            <p style="color: var(--neutral-700); font-size: 14px; line-height: 1.6;">Mathematical anonymization guarantees—audit logs protect individual data patterns per GDPR Article 25</p>
           </div>
-
-          <div class="adv-box">
-            <i class="fas fa-server"></i>
-            <div class="adv-box-content">
-              <strong>On-Device Processing</strong>
-              <span>Zero cloud transmission—complete data localization for RBI, DPDP, and HIPAA compliance requirements</span>
-            </div>
+          <div class="tech-card-enterprise">
+            <h4><i class="fas fa-server" style="color: var(--primary-blue); margin-right: 12px;"></i>On-Device Processing</h4>
+            <p style="color: var(--neutral-700); font-size: 14px; line-height: 1.6;">Zero cloud transmission—complete data localization for RBI, DPDP, and HIPAA compliance requirements</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INDUSTRIES -->
-  <section id="industries" class="section-white">
+  <section id="industries" class="section-white-enterprise">
     <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle">Sector Applications</span>
+      <div class="section-header-enterprise">
+        <span class="section-label">Sector Applications</span>
         <h2>Enterprise Solutions by Industry</h2>
-        <p class="section-desc">
-          Tailored workflows for banking, healthcare, research, and government compliance requirements
-        </p>
+        <p class="section-description">Tailored workflows for banking, healthcare, research, and government compliance</p>
       </div>
 
-      <div class="industry-grid">
-        <div class="industry-card">
-          <div class="industry-number">01</div>
-          <h3>
-            <i class="fas fa-university"></i>
-            <span>Banking & Finance</span>
-          </h3>
-          <ul class="industry-list">
+      <div class="industry-enterprise-grid">
+        <div class="industry-enterprise-card">
+          <div class="industry-header-enterprise">
+            <i class="fas fa-building-columns"></i>
+            <h3>Banking & Finance</h3>
+          </div>
+          <p>Secure AI solutions for banking, asset management, and insurance with full regulatory compliance and audit trails.</p>
+          <ul class="feature-list-enterprise">
             <li>KYC/AML document processing</li>
             <li>Loan application redaction</li>
             <li>Account opening automation</li>
             <li>RBI/Basel III compliance</li>
-            <li>Transaction record anonymization</li>
           </ul>
-          <div class="industry-compliance">
-            <span>DPDP</span>
-            <span>GDPR</span>
-            <span>RBI Guidelines</span>
+          <div class="compliance-tags">
+            <span class="tag">DPDP</span>
+            <span class="tag">GDPR</span>
+            <span class="tag">RBI</span>
           </div>
         </div>
 
-        <div class="industry-card">
-          <div class="industry-number">02</div>
-          <h3>
-            <i class="fas fa-heartbeat"></i>
-            <span>Healthcare & Life Sciences</span>
-          </h3>
-          <ul class="industry-list">
+        <div class="industry-enterprise-card">
+          <div class="industry-header-enterprise">
+            <i class="fas fa-hospital"></i>
+            <h3>Healthcare</h3>
+          </div>
+          <p>HIPAA-compliant AI infrastructure for medical imaging, patient data management, and clinical decision support.</p>
+          <ul class="feature-list-enterprise">
             <li>Medical records redaction</li>
             <li>Patient consent forms</li>
-            <li>Clinical trial data anonymization</li>
+            <li>Clinical trial anonymization</li>
             <li>Insurance claim processing</li>
-            <li>Telemedicine compliance</li>
           </ul>
-          <div class="industry-compliance">
-            <span>HIPAA</span>
-            <span>GDPR</span>
-            <span>FDA 21 CFR Part 11</span>
+          <div class="compliance-tags">
+            <span class="tag">HIPAA</span>
+            <span class="tag">HL7 FHIR</span>
+            <span class="tag">HITECH</span>
           </div>
         </div>
 
-        <div class="industry-card">
-          <div class="industry-number">03</div>
-          <h3>
+        <div class="industry-enterprise-card">
+          <div class="industry-header-enterprise">
             <i class="fas fa-flask"></i>
-            <span>Research & Academia</span>
-          </h3>
-          <ul class="industry-list">
+            <h3>Research & Academia</h3>
+          </div>
+          <p>Compliant data processing for clinical trials, surveys, and academic research with IRB standards.</p>
+          <ul class="feature-list-enterprise">
             <li>Clinical trial data protection</li>
             <li>Survey data anonymization</li>
             <li>IRB compliance automation</li>
             <li>Publication preparation</li>
-            <li>Grant application processing</li>
           </ul>
-          <div class="industry-compliance">
-            <span>GDPR Article 89</span>
-            <span>IRB Standards</span>
+          <div class="compliance-tags">
+            <span class="tag">GDPR Art. 89</span>
+            <span class="tag">IRB</span>
           </div>
         </div>
 
-        <div class="industry-card">
-          <div class="industry-number">04</div>
-          <h3>
+        <div class="industry-enterprise-card">
+          <div class="industry-header-enterprise">
             <i class="fas fa-landmark"></i>
-            <span>Government & Public Sector</span>
-          </h3>
-          <ul class="industry-list">
+            <h3>Government</h3>
+          </div>
+          <p>Sovereign AI solutions with on-premise deployment for national security and public administration.</p>
+          <ul class="feature-list-enterprise">
             <li>Citizen data protection</li>
             <li>FOIA request processing</li>
             <li>Identity document redaction</li>
             <li>Law enforcement records</li>
-            <li>Public records compliance</li>
           </ul>
-          <div class="industry-compliance">
-            <span>DPDP</span>
-            <span>RTI Act</span>
+          <div class="compliance-tags">
+            <span class="tag">DPDP</span>
+            <span class="tag">RTI Act</span>
+            <span class="tag">FedRAMP</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COMPLIANCE -->
-  <section id="compliance" class="section-gray">
+  <section id="compliance" class="section-gray-enterprise">
     <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle">Regulatory Framework</span>
+      <div class="section-header-enterprise">
+        <span class="section-label">Regulatory Framework</span>
         <h2>Multi-Jurisdictional Compliance</h2>
-        <p class="section-desc">
-          Architected for simultaneous compliance across India, European Union, United States, and UK regulations
-        </p>
+        <p class="section-description">Architected for simultaneous compliance across India, EU, US, and UK regulations</p>
       </div>
 
-      <div class="compliance-tabs">
-        <div class="compliance-card">
-          <div class="compliance-header">
-            <span class="flag">🇮🇳</span>
-            <div>
-              <h3>India: DPDP Act 2023</h3>
-            </div>
+      <div class="industry-enterprise-grid">
+        <div class="industry-enterprise-card">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+            <span style="font-size: 48px;">🇮🇳</span>
+            <h3 style="margin: 0; font-size: 20px; font-weight: 700; color: var(--primary-dark);">India: DPDP Act 2023</h3>
           </div>
-          <ul>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Section 8: Data localization through on-device processing</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Section 6: Automated data minimization by design</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Section 11: Transparent audit trails and logging</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>RBI Payment Data: Zero foreign server transmission</span>
-            </li>
+          <ul class="feature-list-enterprise">
+            <li>Section 8: Data localization</li>
+            <li>Section 6: Data minimization</li>
+            <li>Section 11: Audit trails</li>
+            <li>RBI: Zero foreign transmission</li>
           </ul>
         </div>
 
-        <div class="compliance-card">
-          <div class="compliance-header">
-            <span class="flag">🇪🇺</span>
-            <div>
-              <h3>European Union: GDPR</h3>
-            </div>
+        <div class="industry-enterprise-card">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+            <span style="font-size: 48px;">🇪🇺</span>
+            <h3 style="margin: 0; font-size: 20px; font-weight: 700; color: var(--primary-dark);">European Union: GDPR</h3>
           </div>
-          <ul>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Article 5: Data minimization by design</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Article 25: Privacy by default architecture</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Article 32: State-of-the-art security measures</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Article 89: Research data safeguards</span>
-            </li>
+          <ul class="feature-list-enterprise">
+            <li>Article 5: Data minimization</li>
+            <li>Article 25: Privacy by default</li>
+            <li>Article 32: Security measures</li>
+            <li>Article 89: Research safeguards</li>
           </ul>
         </div>
 
-        <div class="compliance-card">
-          <div class="compliance-header">
-            <span class="flag">🇺🇸</span>
-            <div>
-              <h3>United States: HIPAA</h3>
-            </div>
+        <div class="industry-enterprise-card">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+            <span style="font-size: 48px;">🇺🇸</span>
+            <h3 style="margin: 0; font-size: 20px; font-weight: 700; color: var(--primary-dark);">United States: HIPAA</h3>
           </div>
-          <ul>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Safe Harbor: De-identification (§164.514)</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>18 HIPAA identifiers automated detection</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>Audit controls (§164.312) implementation</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span>FDA 21 CFR Part 11 electronic records</span>
-            </li>
+          <ul class="feature-list-enterprise">
+            <li>Safe Harbor de-identification</li>
+            <li>18 HIPAA identifier detection</li>
+            <li>Audit controls implementation</li>
+            <li>FDA 21 CFR Part 11 compliance</li>
           </ul>
         </div>
       </div>
 
-      <div class="cert-grid">
-        <div class="cert-badge">
-          <i class="fas fa-certificate"></i>
-          <span>ISO 27001 Ready</span>
+      <div style="display: flex; justify-content: center; gap: 24px; margin-top: 48px; flex-wrap: wrap;">
+        <div style="background: var(--white); padding: 16px 32px; border-radius: 8px; display: flex; align-items: center; gap: 12px; border: 1px solid var(--neutral-200);">
+          <i class="fas fa-certificate" style="font-size: 24px; color: var(--primary-blue);"></i>
+          <span style="font-weight: 700; color: var(--neutral-800);">ISO 27001 Ready</span>
         </div>
-        <div class="cert-badge">
-          <i class="fas fa-shield-alt"></i>
-          <span>SOC 2 Type II Track</span>
+        <div style="background: var(--white); padding: 16px 32px; border-radius: 8px; display: flex; align-items: center; gap: 12px; border: 1px solid var(--neutral-200);">
+          <i class="fas fa-shield-alt" style="font-size: 24px; color: var(--primary-blue);"></i>
+          <span style="font-weight: 700; color: var(--neutral-800);">SOC 2 Type II Track</span>
         </div>
-        <div class="cert-badge">
-          <i class="fas fa-lock"></i>
-          <span>Zero Trust Architecture</span>
+        <div style="background: var(--white); padding: 16px 32px; border-radius: 8px; display: flex; align-items: center; gap: 12px; border: 1px solid var(--neutral-200);">
+          <i class="fas fa-lock" style="font-size: 24px; color: var(--primary-blue);"></i>
+          <span style="font-weight: 700; color: var(--neutral-800);">Zero Trust Architecture</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRICING -->
-  <section id="pricing" class="section-white">
+  <section id="pricing" class="section-white-enterprise">
     <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle">Enterprise Pricing</span>
+      <div class="section-header-enterprise">
+        <span class="section-label">Enterprise Pricing</span>
         <h2>Scalable Plans for Organizations</h2>
-        <p class="section-desc">
-          Flexible pricing designed for startups to Fortune 500 enterprises. No hidden fees.
-        </p>
+        <p class="section-description">Flexible pricing from startups to Fortune 500 enterprises</p>
       </div>
 
-      <div class="pricing-grid">
-        <div class="price-card">
-          <div class="price-tier">Starter</div>
-          <div class="price-amount">$0<span>/month</span></div>
-          <ul class="price-features">
-            <li><i class="fas fa-check"></i> 50 documents/month</li>
-            <li><i class="fas fa-check"></i> Basic multimodal AI</li>
-            <li><i class="fas fa-check"></i> Community support</li>
-            <li><i class="fas fa-check"></i> Local audit logs</li>
-            <li><i class="fas fa-check"></i> Open-source access</li>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto;">
+        <div style="background: var(--white); border: 2px solid var(--neutral-200); border-radius: 8px; padding: 40px; transition: all 0.3s;">
+          <h3 style="font-size: 24px; font-weight: 700; color: var(--primary-dark); margin-bottom: 16px;">Starter</h3>
+          <div style="margin-bottom: 24px;">
+            <span style="font-size: 48px; font-weight: 800; color: var(--primary-blue);">$0</span>
+            <span style="color: var(--neutral-700);">/month</span>
+          </div>
+          <ul class="feature-list-enterprise" style="margin-bottom: 32px;">
+            <li>50 documents/month</li>
+            <li>Basic multimodal AI</li>
+            <li>Community support</li>
+            <li>Local audit logs</li>
+            <li>Open-source access</li>
           </ul>
-          <a href="https://github.com/ssundxr/PII_Redaction/releases" class="btn btn-outline btn-block">
-            Download Free
-          </a>
+          <a href="https://github.com/ssundxr/PII_Redaction/releases" class="btn-secondary-enterprise" style="width: 100%; text-align: center; display: block;">Download Free</a>
         </div>
 
-        <div class="price-card featured">
-          <div class="featured-label">Most Popular</div>
-          <div class="price-tier">Professional</div>
-          <div class="price-amount">$29<span>/month</span></div>
-          <ul class="price-features">
-            <li><i class="fas fa-check"></i> Unlimited documents</li>
-            <li><i class="fas fa-check"></i> Full multimodal stack</li>
-            <li><i class="fas fa-check"></i> Web dashboard access</li>
-            <li><i class="fas fa-check"></i> Federated learning</li>
-            <li><i class="fas fa-check"></i> Differential privacy</li>
-            <li><i class="fas fa-check"></i> Email support (24h)</li>
-            <li><i class="fas fa-check"></i> Compliance reporting</li>
+        <div style="background: var(--white); border: 3px solid var(--primary-blue); border-radius: 8px; padding: 40px; position: relative; transform: scale(1.05); box-shadow: 0 8px 24px rgba(0,82,204,0.15);">
+          <div style="position: absolute; top: -16px; left: 50%; transform: translateX(-50%); background: var(--primary-blue); color: var(--white); padding: 6px 20px; border-radius: 50px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Most Popular</div>
+          <h3 style="font-size: 24px; font-weight: 700; color: var(--primary-dark); margin-bottom: 16px;">Professional</h3>
+          <div style="margin-bottom: 24px;">
+            <span style="font-size: 48px; font-weight: 800; color: var(--primary-blue);">$29</span>
+            <span style="color: var(--neutral-700);">/month</span>
+          </div>
+          <ul class="feature-list-enterprise" style="margin-bottom: 32px;">
+            <li>Unlimited documents</li>
+            <li>Full multimodal stack</li>
+            <li>Web dashboard access</li>
+            <li>Federated learning</li>
+            <li>Differential privacy</li>
+            <li>Email support (24h)</li>
           </ul>
-          <a href="#contact" class="btn btn-primary btn-block">
-            Get Started
-          </a>
+          <a href="#contact" class="btn-primary-enterprise" style="width: 100%; text-align: center; display: block;">Get Started</a>
         </div>
 
-        <div class="price-card">
-          <div class="price-tier">Enterprise</div>
-          <div class="price-amount">$499<span>/month</span></div>
-          <ul class="price-features">
-            <li><i class="fas fa-check"></i> Bulk API access</li>
-            <li><i class="fas fa-check"></i> Custom model training</li>
-            <li><i class="fas fa-check"></i> On-premise deployment</li>
-            <li><i class="fas fa-check"></i> Multi-user RBAC</li>
-            <li><i class="fas fa-check"></i> SLA (99.9% uptime)</li>
-            <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
-            <li><i class="fas fa-check"></i> Compliance audits</li>
-            <li><i class="fas fa-check"></i> Custom integrations</li>
+        <div style="background: var(--white); border: 2px solid var(--neutral-200); border-radius: 8px; padding: 40px; transition: all 0.3s;">
+          <h3 style="font-size: 24px; font-weight: 700; color: var(--primary-dark); margin-bottom: 16px;">Enterprise</h3>
+          <div style="margin-bottom: 24px;">
+            <span style="font-size: 48px; font-weight: 800; color: var(--primary-blue);">$499</span>
+            <span style="color: var(--neutral-700);">/month</span>
+          </div>
+          <ul class="feature-list-enterprise" style="margin-bottom: 32px;">
+            <li>Bulk API access</li>
+            <li>Custom model training</li>
+            <li>On-premise deployment</li>
+            <li>Multi-user RBAC</li>
+            <li>99.9% uptime SLA</li>
+            <li>24/7 dedicated support</li>
           </ul>
-          <a href="#contact" class="btn btn-outline btn-block">
-            Contact Sales
-          </a>
+          <a href="#contact" class="btn-secondary-enterprise" style="width: 100%; text-align: center; display: block;">Contact Sales</a>
         </div>
       </div>
 
-      <div class="pricing-note">
-        <i class="fas fa-info-circle"></i>
+      <div style="background: var(--neutral-50); padding: 24px; border-radius: 8px; border: 1px solid var(--neutral-200); margin-top: 48px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <i class="fas fa-info-circle" style="color: var(--primary-blue); margin-right: 12px;"></i>
         <strong>90-Day Pilot Program:</strong> Available for banking and healthcare institutions. Full enterprise features with no commitment required. Contact our solutions team for eligibility.
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section-gray">
+  <section id="contact" class="section-contact-enterprise">
     <div class="container">
-      <div class="section-header-center">
-        <span class="section-subtitle">Get In Touch</span>
-        <h2>Request Enterprise Consultation</h2>
-        <p class="section-desc">
-          Speak with our solutions team about your compliance requirements
-        </p>
-      </div>
-
-      <div class="contact-layout">
-        <div class="contact-info">
-          <h3>PRIVARA LABS</h3>
-          <p>
-            Enterprise document privacy platform serving banking, healthcare, and research institutions across 50+ countries.
-          </p>
+      <div class="contact-enterprise-layout">
+        <div class="contact-info-enterprise">
+          <span class="section-label-white">Get In Touch</span>
+          <h2>Request Enterprise Consultation</h2>
+          <p>Speak with our solutions team about your compliance requirements.</p>
           
-          <div class="contact-details">
-            <div class="contact-item">
+          <div class="contact-methods">
+            <div class="contact-method">
               <i class="fas fa-envelope"></i>
               <div>
                 <strong>Email</strong>
                 <a href="mailto:sundxrr@gmail.com">sundxrr@gmail.com</a>
               </div>
             </div>
-
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
+            <div class="contact-method">
+              <i class="fas fa-building"></i>
               <div>
                 <strong>Headquarters</strong>
-                <span>Bengaluru, Karnataka, India</span>
+                <span>Bangalore, Karnataka, India</span>
               </div>
             </div>
-
-            <div class="contact-item">
-
+            <div class="contact-method">
               <i class="fas fa-graduation-cap"></i>
               <div>
                 <strong>Incubation</strong>
-                <span>Alliance University E-Cell Startup Program</span>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <i class="fas fa-clock"></i>
-              <div>
-                <strong>Response Time</strong>
-                <span>Enterprise: 4 hours | Standard: 24 hours</span>
+                <span>Alliance University E-Cell</span>
               </div>
             </div>
           </div>
 
-          <div class="social-links">
-            <a href="https://github.com/ssundxr" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/sundxrr" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/sundxrr" target="_blank" rel="noopener" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
+          <div class="social-enterprise">
+            <a href="https://github.com/ssundxr" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sundxrr" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
 
-        <div class="contact-form">
-          <form id="contactForm" action="https://formspree.io/f/xpwyekzw" method="POST">
-            <div class="form-grid">
+        <div class="contact-form-enterprise">
+          <form action="https://formspree.io/f/xpwyekzw" method="POST" id="contactForm">
+            <div class="form-row">
               <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" placeholder=required>
+                <label>First Name</label>
+                <input type="text" name="firstName" required>
               </div>
-
               <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email"  required>
-              </div>
-            </div>
-
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="organization">Organization</label>
-                <input type="text" id="organization" name="organization" >
-              </div>
-
-              <div class="form-group">
-                <label for="industry">Industry *</label>
-                <select id="industry" name="industry" required>
-                  <option value="">Select Industry...</option>
-                  <option value="banking">Banking & Finance</option>
-                  <option value="healthcare">Healthcare</option>
-                  <option value="research">Research & Academia</option>
-                  <option value="government">Government</option>
-                  <option value="legal">Legal Services</option>
-                  <option value="insurance">Insurance</option>
-                  <option value="other">Other</option>
-                </select>
+                <label>Last Name</label>
+                <input type="text" name="lastName" required>
               </div>
             </div>
-
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your compliance requirements..."></textarea>
+              <label>Business Email</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label>Company</label>
+              <input type="text" name="company" required>
+            </div>
+            <div class="form-group">
+              <label>Industry</label>
+              <select name="industry" required>
+                <option value="">Select Industry</option>
+                <option value="Financial Services">Financial Services</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Research & Academia">Research & Academia</option>
+                <option value="Government">Government</option>
+                <option value="Legal Services">Legal Services</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" rows="4" required></textarea>
             </div>
 
-            <input type="hidden" name="_subject" value="New Enterprise Inquiry - Privara PII">
-            <input type="hidden" name="_cc" value="sundxrr@gmail.com">
+            <input type="hidden" name="_subject" value="New Privara PII Enterprise Inquiry">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_captcha" value="false">
 
-            <button type="submit" class="btn btn-primary btn-block">
+            <button type="submit" class="btn-submit-enterprise" id="submitBtn">
               <i class="fas fa-paper-plane"></i>
-              <span>Submit Request</span>
+              <span>Submit Inquiry</span>
             </button>
+
+            <div id="formStatus" style="margin-top: 16px; text-align: center; font-size: 14px; font-weight: 600;"></div>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>PRIVARA LABS</h4>
-          <p>
-            Advancing global document privacy through multimodal artificial intelligence. Trusted by 500+ organizations worldwide.
-          </p>
-          <div class="footer-badge">
-            <i class="fas fa-graduation-cap"></i>
-            <span>Alliance University E-Cell</span>
-          </div>
-        </div>
 
-        <div class="footer-col">
+  <footer class="footer-enterprise">
+    <div class="container">
+      <div class="footer-content-enterprise">
+        <div class="footer-col-enterprise">
+          <span class="footer-brand">PRIVARA LABS</span>
+          <p>Enterprise AI solutions for regulated industries worldwide.</p>
+        </div>
+        <div class="footer-col-enterprise">
           <h4>Product</h4>
           <ul>
-            <li><a href="#solution">Technology</a></li>
+            <li><a href="#technology">Technology</a></li>
             <li><a href="https://github.com/ssundxr/PII_Redaction">Documentation</a></li>
-            <li><a href="https://github.com/ssundxr/PII_Redaction">GitHub</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#">API Reference</a></li>
           </ul>
         </div>
-
-        <div class="footer-col">
+        <div class="footer-col-enterprise">
           <h4>Industries</h4>
           <ul>
-            <li><a href="#industries">Banking & Finance</a></li>
+            <li><a href="#industries">Banking</a></li>
             <li><a href="#industries">Healthcare</a></li>
             <li><a href="#industries">Research</a></li>
-            <li><a href="#industries">Government</a></li>
-            <li><a href="#">Legal Services</a></li>
           </ul>
         </div>
-
-        <div class="footer-col">
-          <h4>Legal & Compliance</h4>
+        <div class="footer-col-enterprise">
+          <h4>Company</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Data Processing Agreement</a></li>
-            <li><a href="#compliance">Compliance</a></li>
-            <li><a href="#">Security</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 PRIVARA LABS. All Rights Reserved. | Bengaluru, Karnataka, India<br>
-          Incubated by <a href="https://allianceuniversity.edu.in" target="_blank" rel="noopener">Alliance University E-Cell</a>
-        </p>
+      <div class="footer-bottom-enterprise">
+        <p>&copy; 2025 PRIVARA LABS. All Rights Reserved.</p>
+        <div class="footer-links-enterprise">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -724,39 +600,62 @@
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
+          const offset = 80;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
         }
       });
     });
 
-    const nav = document.getElementById('mainNav');
-    let lastScroll = 0;
-
+    const nav = document.querySelector('.enterprise-nav');
     window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (currentScroll > 100) {
+      if (window.pageYOffset > 100) {
         nav.classList.add('scrolled');
       } else {
         nav.classList.remove('scrolled');
       }
-      
-      lastScroll = currentScroll;
     });
 
     const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function(e) {
-      const email = document.getElementById('email').value;
-      const name = document.getElementById('name').value;
-      const industry = document.getElementById('industry').value;
+    const submitBtn = document.getElementById('submitBtn');
+    const formStatus = document.getElementById('formStatus');
 
-      if (!email || !name || !industry) {
-        e.preventDefault();
-        alert('Please fill in all required fields');
-        return false;
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>';
+      formStatus.innerHTML = '';
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('https://formspree.io/f/xpwyekzw', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          formStatus.style.color = '#28a745';
+          formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.';
+          form.reset();
+          submitBtn.innerHTML = '<i class="fas fa-check"></i> <span>Sent Successfully</span>';
+
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Submit Inquiry</span>';
+          }, 3000);
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (error) {
+        formStatus.style.color = '#dc3545';
+        formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Oops! There was a problem submitting your form. Please email us directly at sundxrr@gmail.com';
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Submit Inquiry</span>';
       }
     });
   </script>
