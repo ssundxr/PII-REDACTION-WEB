@@ -307,13 +307,13 @@ google-site-verification: googleb19a6b213c187e97.html
   </section>
 
 
-  <section id="contact" class="section-contact-dark">
+<section id="contact" class="section-contact-dark">
   <div class="container">
     <div class="contact-enterprise-layout">
       <div class="contact-info-enterprise">
         <span class="section-label-white">Contact</span>
         <h2>Partner with PRIVARA LABS</h2>
-        <p>Discuss your enterprise AI requirements with our solutions team. Choose your preferred contact method below.</p>
+        <p>Discuss your enterprise AI requirements with our solutions team. We respond to all inquiries within 24 hours.</p>
         
         <div class="contact-methods">
           <div class="contact-method">
@@ -341,7 +341,7 @@ google-site-verification: googleb19a6b213c187e97.html
             <i class="fas fa-graduation-cap"></i>
             <div>
               <strong>Incubation</strong>
-              <span></span>
+              <span>Alliance University E-Cell</span>
             </div>
           </div>
         </div>
@@ -353,7 +353,7 @@ google-site-verification: googleb19a6b213c187e97.html
       </div>
 
       <div class="contact-form-enterprise">
-        <form id="contactFormHome">
+        <form action="https://formspree.io/f/xpwyekzw" method="POST" id="contactFormHome">
           <div class="form-row">
             <div class="form-group">
               <label>First Name</label>
@@ -392,26 +392,9 @@ google-site-verification: googleb19a6b213c187e97.html
             <textarea name="message" id="message" rows="4" placeholder="Tell us about your AI requirements..." required></textarea>
           </div>
           
-          <div class="form-group">
-            <label style="font-weight: 600; color: #ffffff; margin-bottom: 12px; display: block;">Preferred Contact Method</label>
-            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: #b0b0b0;">
-                <input type="radio" name="contactMethod" value="email" checked style="width: 18px; height: 18px;">
-                <i class="fas fa-envelope" style="color: #50a0e0;"></i>
-                <span>Email</span>
-              </label>
-              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: #b0b0b0;">
-                <input type="radio" name="contactMethod" value="whatsapp" style="width: 18px; height: 18px;">
-                <i class="fab fa-whatsapp" style="color: #25D366;"></i>
-                <span>WhatsApp</span>
-              </label>
-              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: #b0b0b0;">
-                <input type="radio" name="contactMethod" value="both" style="width: 18px; height: 18px;">
-                <i class="fas fa-users" style="color: #50a0e0;"></i>
-                <span>Both</span>
-              </label>
-            </div>
-          </div>
+          <input type="hidden" name="_subject" value="New Enterprise AI Inquiry - PRIVARA LABS">
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_next" value="https://wa.me/919944877921?text=Thank%20you%20for%20your%20inquiry!%20Our%20team%20will%20contact%20you%20soon.">
           
           <button type="submit" class="btn-submit-enterprise" id="submitBtnHome">
             <i class="fas fa-paper-plane"></i>
@@ -424,6 +407,7 @@ google-site-verification: googleb19a6b213c187e97.html
     </div>
   </div>
 </section>
+
 
   <footer class="footer-enterprise dark-footer">
     <div class="container">
@@ -497,105 +481,83 @@ google-site-verification: googleb19a6b213c187e97.html
     lastScroll = currentScroll;
   });
 
-function scrollToSolutions() {
-  const solutionsSection = document.querySelector('#solutions');
-  const offset = 80;
-  const targetPosition = solutionsSection.getBoundingClientRect().top + window.pageYOffset - offset;
-  
-  window.scrollTo({ 
-    top: targetPosition, 
-    behavior: 'smooth' 
-  });
-  
-  setTimeout(() => {
-    const learnMoreLink = document.querySelector('#solutions .solution-enterprise-card:first-child .link-enterprise');
-    if (learnMoreLink) {
-      learnMoreLink.classList.add('learn-more-pulse');
-    }
-  }, 1000);
-}
-
+  function scrollToSolutions() {
+    const solutionsSection = document.querySelector('#solutions');
+    const offset = 80;
+    const targetPosition = solutionsSection.getBoundingClientRect().top + window.pageYOffset - offset;
+    
+    window.scrollTo({ 
+      top: targetPosition, 
+      behavior: 'smooth' 
+    });
+    
+    setTimeout(() => {
+      const learnMoreLink = document.querySelector('#solutions .solution-enterprise-card:first-child .link-enterprise');
+      if (learnMoreLink) {
+        learnMoreLink.classList.add('learn-more-pulse');
+      }
+    }, 1000);
+  }
 
   const form = document.getElementById('contactFormHome');
   const submitBtn = document.getElementById('submitBtnHome');
   const formStatus = document.getElementById('formStatusHome');
 
   if (form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
       e.preventDefault();
       
-      const firstName = document.getElementById('firstName').value;
-      const lastName = document.getElementById('lastName').value;
-      const email = document.getElementById('email').value;
-      const company = document.getElementById('company').value;
-      const phone = document.getElementById('phone').value;
-      const industry = document.getElementById('industry').value;
-      const message = document.getElementById('message').value;
-      const contactMethod = document.querySelector('input[name="contactMethod"]:checked').value;
-      
       submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Processing...</span>';
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>';
       formStatus.innerHTML = '';
       
-      const fullName = `${firstName} ${lastName}`;
+      const formData = new FormData(form);
+      const firstName = formData.get('firstName');
       
-      const emailBody = `New Enterprise AI Inquiry from PRIVARA LABS Website
-      
-Name: ${fullName}
-Email: ${email}
-Company: ${company}
-Phone: ${phone || 'Not provided'}
-Industry: ${industry}
-Preferred Contact: ${contactMethod.toUpperCase()}
-
-Message:
-${message}
-
----
-Sent from PRIVARA LABS Contact Form`;
-
-      const whatsappMessage = `*New Enterprise AI Inquiry - PRIVARA LABS*%0A%0A*Name:* ${fullName}%0A*Email:* ${email}%0A*Company:* ${company}%0A*Phone:* ${phone || 'Not provided'}%0A*Industry:* ${ind}...`
-
-      if (contactMethod === 'email' || contactMethod === 'both') {
-        const mailtoLink = `mailto:sundxrr@gmail.com?subject=Enterprise AI Inquiry from ${fullName}&body=${encodeURIComponent(emailBody)}`;
-        window.open(mailtoLink, '_blank');
-      }
-      
-      if (contactMethod === 'whatsapp' || contactMethod === 'both') {
-        setTimeout(() => {
-          const whatsappLink = `https://wa.me/919944877921?text=${whatsappMessage}`;
-          window.open(whatsappLink, '_blank');
-        }, 500);
-      }
-      
-      formStatus.style.color = '#28a745';
-      formStatus.innerHTML = `
-        <div style="background: rgba(40, 167, 69, 0.1); padding: 20px; border-radius: 8px; border: 1px solid rgba(40, 167, 69, 0.3); margin-top: 16px;">
-          <i class="fas fa-check-circle" style="font-size: 24px; margin-bottom: 12px;"></i>
-          <div style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Thank You, ${firstName}!</div>
-          <div style="font-size: 14px; line-height: 1.6; color: #b0b0b0;">
-            Your inquiry has been received. We've opened your ${contactMethod === 'both' ? 'email and WhatsApp' : contactMethod} client for you to send your message directly.
-            <br><br>
-            <strong>What happens next:</strong><br>
-            • Our team will review your inquiry within 2 hours<br>
-            • You'll receive a detailed response within 24 hours<br>
-            • For urgent matters, call us at +91 9944877921
-            <br><br>
-            <strong>Inquiry Reference:</strong> #PRVR-${Date.now().toString().slice(-6)}
-          </div>
-        </div>
-      `;
-      
-      submitBtn.innerHTML = '<i class="fas fa-check"></i> <span>Sent Successfully</span>';
-      form.reset();
-      
-      setTimeout(() => {
+      try {
+        const response = await fetch('https://formspree.io/f/xpwyekzw', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          formStatus.style.color = '#28a745';
+          formStatus.innerHTML = `
+            <div style="background: rgba(40, 167, 69, 0.1); padding: 20px; border-radius: 8px; border: 1px solid rgba(40, 167, 69, 0.3); margin-top: 16px;">
+              <i class="fas fa-check-circle" style="font-size: 24px; margin-bottom: 12px;"></i>
+              <div style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Thank You, ${firstName}!</div>
+              <div style="font-size: 14px; line-height: 1.6; color: #b0b0b0;">
+                Your inquiry has been received successfully. Our team will review and respond within 24 hours.
+                <br><br>
+                <strong>Inquiry Reference:</strong> #PRVR-${Date.now().toString().slice(-6)}
+                <br><br>
+                For urgent matters, WhatsApp us at <a href="https://wa.me/919944877921" target="_blank" style="color: #28a745;">+91 9944877921</a>
+              </div>
+            </div>
+          `;
+          submitBtn.innerHTML = '<i class="fas fa-check"></i> <span>Sent Successfully</span>';
+          form.reset();
+          
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Submit Inquiry</span>';
+          }, 3000);
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (error) {
+        formStatus.style.color = '#dc3545';
+        formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> There was a problem. Please email us at sundxrr@gmail.com or WhatsApp at +91 9944877921';
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Submit Inquiry</span>';
-      }, 3000);
+      }
     });
   }
 </script>
+
 
 
 
