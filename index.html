@@ -314,7 +314,7 @@ google-site-verification: googleb19a6b213c187e97.html
         <span class="section-label-white">Contact</span>
         <h2>Partner with PRIVARA LABS</h2>
         <p>Discuss your enterprise AI requirements with our solutions team. Choose your preferred contact method below.</p>
-        
+
         <div class="contact-methods">
           <div class="contact-method">
             <i class="fas fa-envelope"></i>
@@ -341,7 +341,7 @@ google-site-verification: googleb19a6b213c187e97.html
             <i class="fas fa-graduation-cap"></i>
             <div>
               <strong>Incubation</strong>
-              <span></span>
+              <span>Alliance University E-Cell</span>
             </div>
           </div>
         </div>
@@ -353,7 +353,7 @@ google-site-verification: googleb19a6b213c187e97.html
       </div>
 
       <div class="contact-form-enterprise">
-        <form id="contactFormHome">
+        <form action="https://formspree.io/f/xpwyekzw" method="POST" id="contactFormHome">
           <div class="form-row">
             <div class="form-group">
               <label>First Name</label>
@@ -391,7 +391,7 @@ google-site-verification: googleb19a6b213c187e97.html
             <label>Message</label>
             <textarea name="message" id="message" rows="4" placeholder="Tell us about your AI requirements..." required></textarea>
           </div>
-          
+
           <div class="form-group">
             <label style="font-weight: 600; color: #ffffff; margin-bottom: 12px; display: block;">Preferred Contact Method</label>
             <div style="display: flex; gap: 16px; flex-wrap: wrap;">
@@ -412,12 +412,16 @@ google-site-verification: googleb19a6b213c187e97.html
               </label>
             </div>
           </div>
-          
+
+          <input type="hidden" name="_subject" value="New Privara PII Enterprise Inquiry">
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_captcha" value="false">
+
           <button type="submit" class="btn-submit-enterprise" id="submitBtnHome">
             <i class="fas fa-paper-plane"></i>
             <span>Submit Inquiry</span>
           </button>
-          
+
           <div id="formStatusHome" style="margin-top: 16px; text-align: center; font-size: 14px; font-weight: 600;"></div>
         </form>
       </div>
