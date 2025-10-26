@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PRIVARA LABS | Enterprise AI Solutions</title>
   <meta name="description" content="Leading provider of enterprise-grade AI solutions for Fortune 500 companies and government institutions worldwide.">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,9 +12,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="dark-mode">
 
-  <nav class="enterprise-nav">
+  <nav class="enterprise-nav dark-nav">
     <div class="container-nav">
       <div class="nav-brand">
         <span class="brand-name">PRIVARA LABS</span>
@@ -31,15 +30,11 @@
     </div>
   </nav>
 
-  <section class="hero-enterprise">
+  <section class="hero-enterprise dark-hero">
     <div class="container-hero">
       <div class="hero-content-enterprise">
-        <div style="width: 100%; max-width: 900px; margin: 0 auto 48px auto; position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1); border: 2px solid rgba(0, 82, 204, 0.15);">
-          <video 
-            style="width: 100%; height: auto; display: block;" 
-            controls 
-            preload="auto"
-            poster="video-thumbnail.jpg">
+        <div style="width: 100%; max-width: 900px; margin: 0 auto 48px auto; position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 82, 204, 0.3); border: 2px solid rgba(80, 160, 224, 0.3);">
+          <video style="width: 100%; height: auto; display: block; background: #000;" autoplay muted loop playsinline>
             <source src="intro.mp4" type="video/mp4">
           </video>
         </div>
@@ -73,10 +68,8 @@
             <i class="fas fa-rocket"></i>
             <span>NEW LAUNCH</span>
           </div>
-          
           <h2>Privara PII - Automated Document Privacy</h2>
           <p>The world's first multimodal PII redaction platform. GDPR, HIPAA & DPDP compliant.</p>
-          
           <button onclick="scrollToSolutions()" class="btn-explore">
             <span>Explore Privara PII</span>
             <i class="fas fa-arrow-right"></i>
@@ -84,7 +77,7 @@
         </div>
 
         <div class="hero-actions">
-          <a href="mailto:sundxrr@gmail.com?subject=Enterprise%20AI%20Inquiry&body=Hello%20PRIVARA%20LABS%20team,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20your%20enterprise%20AI%20solutions.%0D%0A%0D%0AName:%20%0D%0ACompany:%20%0D%0AIndustry:%20%0D%0A%0D%0AMessage:%20" class="btn-primary-enterprise">Contact Us</a>
+          <a href="mailto:sundxrr@gmail.com?subject=Enterprise%20AI%20Inquiry" class="btn-primary-enterprise">Contact Us</a>
           <a href="#technology" class="btn-secondary-enterprise">Our Technology</a>
         </div>
       </div>
@@ -115,7 +108,7 @@
     </div>
   </section>
 
-  <section id="solutions" class="section-white-enterprise">
+  <section id="solutions" class="section-dark-enterprise">
     <div class="container">
       <div class="section-header-enterprise">
         <span class="section-label">Solutions</span>
@@ -124,7 +117,7 @@
       </div>
 
       <div class="solutions-enterprise-grid">
-        <div class="solution-enterprise-card">
+        <div class="solution-enterprise-card dark-card">
           <div class="solution-icon-enterprise">
             <i class="fas fa-shield-halved"></i>
           </div>
@@ -138,7 +131,7 @@
           <a href="privara-pii.html" class="link-enterprise">Learn more <i class="fas fa-arrow-right"></i></a>
         </div>
 
-        <div class="solution-enterprise-card">
+        <div class="solution-enterprise-card dark-card">
           <div class="solution-icon-enterprise">
             <i class="fas fa-brain"></i>
           </div>
@@ -152,7 +145,7 @@
           <a href="#contact" class="link-enterprise">Contact sales <i class="fas fa-arrow-right"></i></a>
         </div>
 
-        <div class="solution-enterprise-card">
+        <div class="solution-enterprise-card dark-card">
           <div class="solution-icon-enterprise">
             <i class="fas fa-language"></i>
           </div>
@@ -169,7 +162,7 @@
     </div>
   </section>
 
-  <section id="industries" class="section-gray-enterprise">
+  <section id="industries" class="section-darker-enterprise">
     <div class="container">
       <div class="section-header-enterprise">
         <span class="section-label">Industries</span>
@@ -178,62 +171,62 @@
       </div>
 
       <div class="industry-enterprise-grid">
-        <div class="industry-enterprise-card">
+        <div class="industry-enterprise-card dark-card">
           <div class="industry-header-enterprise">
             <i class="fas fa-building-columns"></i>
             <h3>Financial Services</h3>
           </div>
           <p>Secure AI solutions for banking, asset management, and insurance institutions with full regulatory compliance and audit trails.</p>
           <div class="compliance-tags">
-            <span class="tag">SOC 2</span>
-            <span class="tag">PCI DSS</span>
-            <span class="tag">GLBA</span>
+            <span class="tag dark-tag">SOC 2</span>
+            <span class="tag dark-tag">PCI DSS</span>
+            <span class="tag dark-tag">GLBA</span>
           </div>
         </div>
 
-        <div class="industry-enterprise-card">
+        <div class="industry-enterprise-card dark-card">
           <div class="industry-header-enterprise">
             <i class="fas fa-hospital"></i>
             <h3>Healthcare</h3>
           </div>
           <p>HIPAA-compliant AI infrastructure for medical imaging, patient data management, and clinical decision support systems.</p>
           <div class="compliance-tags">
-            <span class="tag">HIPAA</span>
-            <span class="tag">HL7 FHIR</span>
-            <span class="tag">HITECH</span>
+            <span class="tag dark-tag">HIPAA</span>
+            <span class="tag dark-tag">HL7 FHIR</span>
+            <span class="tag dark-tag">HITECH</span>
           </div>
         </div>
 
-        <div class="industry-enterprise-card">
+        <div class="industry-enterprise-card dark-card">
           <div class="industry-header-enterprise">
             <i class="fas fa-landmark"></i>
             <h3>Government</h3>
           </div>
           <p>Sovereign AI solutions with on-premise deployment for national security, public administration, and citizen services.</p>
           <div class="compliance-tags">
-            <span class="tag">FedRAMP</span>
-            <span class="tag">FISMA</span>
-            <span class="tag">NIST</span>
+            <span class="tag dark-tag">FedRAMP</span>
+            <span class="tag dark-tag">FISMA</span>
+            <span class="tag dark-tag">NIST</span>
           </div>
         </div>
 
-        <div class="industry-enterprise-card">
+        <div class="industry-enterprise-card dark-card">
           <div class="industry-header-enterprise">
             <i class="fas fa-scale-balanced"></i>
             <h3>Legal Services</h3>
           </div>
           <p>Confidential document processing and contract analysis with privileged communication protection and audit compliance.</p>
           <div class="compliance-tags">
-            <span class="tag">Attorney-Client</span>
-            <span class="tag">ISO 27001</span>
-            <span class="tag">ABA Tech</span>
+            <span class="tag dark-tag">Attorney-Client</span>
+            <span class="tag dark-tag">ISO 27001</span>
+            <span class="tag dark-tag">ABA Tech</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="technology" class="section-white-enterprise">
+  <section id="technology" class="section-dark-enterprise">
     <div class="container">
       <div class="section-header-enterprise">
         <span class="section-label">Technology</span>
@@ -242,7 +235,7 @@
       </div>
 
       <div class="tech-grid-enterprise">
-        <div class="tech-card-enterprise">
+        <div class="tech-card-enterprise dark-card">
           <h4>Security & Compliance</h4>
           <ul>
             <li>End-to-end encryption</li>
@@ -251,7 +244,7 @@
             <li>Complete audit logging</li>
           </ul>
         </div>
-        <div class="tech-card-enterprise">
+        <div class="tech-card-enterprise dark-card">
           <h4>Scalability</h4>
           <ul>
             <li>Horizontal scaling capability</li>
@@ -260,7 +253,7 @@
             <li>Auto-scaling infrastructure</li>
           </ul>
         </div>
-        <div class="tech-card-enterprise">
+        <div class="tech-card-enterprise dark-card">
           <h4>Integration</h4>
           <ul>
             <li>RESTful API architecture</li>
@@ -269,7 +262,7 @@
             <li>Custom connector development</li>
           </ul>
         </div>
-        <div class="tech-card-enterprise">
+        <div class="tech-card-enterprise dark-card">
           <h4>Deployment Options</h4>
           <ul>
             <li>Cloud-hosted SaaS</li>
@@ -282,7 +275,7 @@
     </div>
   </section>
 
-  <section id="insights" class="section-gray-enterprise">
+  <section id="insights" class="section-darker-enterprise">
     <div class="container">
       <div class="section-header-enterprise">
         <span class="section-label">Insights</span>
@@ -291,88 +284,17 @@
       </div>
 
       <div class="insights-grid">
-        <div class="insight-card">
+        <div class="insight-card dark-card">
           <div class="insight-meta">Research Paper</div>
           <h3>CNN Hyperparameter Optimization Using Bayesian Methods</h3>
           <p>Novel approaches to automated machine learning optimization achieving significant improvements in diagnostic accuracy.</p>
           <a href="https://github.com/ssundxr/PII_Redaction" target="_blank" class="link-enterprise">Read paper <i class="fas fa-external-link"></i></a>
         </div>
-        <div class="insight-card">
+        <div class="insight-card dark-card">
           <div class="insight-meta">Technical Documentation</div>
           <h3>Multimodal PII Redaction Architecture</h3>
           <p>Comprehensive technical overview of our TrOCR and YOLO-based document processing pipeline for enterprise deployment.</p>
           <a href="https://github.com/ssundxr/PII_Redaction" target="_blank" class="link-enterprise">View documentation <i class="fas fa-external-link"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="founder-showcase">
-    <div class="container">
-      <div class="founder-showcase-grid">
-        <div class="founder-image-wrapper">
-          <div class="founder-image-container">
-            <img src="image.jpg" alt="Shyam Sunder - Founder" class="founder-photo">
-            <div class="founder-badge">
-              <i class="fas fa-rocket"></i>
-              <span>Founder - Privara Labs</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="founder-info">
-          <div class="founder-label">Founder & Student Researcher</div>
-          <h2 class="founder-name">Shyam Sunder</h2>
-          <p class="founder-title">B.Tech AI/ML Student</p>
-          
-          <p class="founder-bio">
-            Student researcher and entrepreneur specializing in advanced machine learning and computer vision. Co-author of research on CNN hyperparameter optimization for medical diagnostics. Building PRIVARA LABS to transform enterprise document privacy through innovative multimodal AI solutions.
-          </p>
-          
-          <div class="founder-achievements">
-            <div class="achievement-item">
-              <i class="fas fa-flask"></i>
-              <span>Research Co-Author - CNN Optimization (Manuscript in Preparation)</span>
-            </div>
-            <div class="achievement-item">
-              <i class="fas fa-certificate"></i>
-              <span>Azure AI & IBM Data Science Certified</span>
-            </div>
-            <div class="achievement-item">
-              <i class="fas fa-code-branch"></i>
-              <span>Open Source Contributor</span>
-            </div>
-          </div>
-          
-          <div class="founder-cta">
-            <a href="portfolio.html" class="btn-founder-portfolio">
-              <div class="btn-founder-content">
-                <div class="btn-founder-icon">
-                  <i class="fas fa-user-tie"></i>
-                </div>
-                <div class="btn-founder-text">
-                  <span class="btn-founder-main">View Complete Profile</span>
-                  <span class="btn-founder-sub">Academic background, research & projects</span>
-                </div>
-                <i class="fas fa-arrow-right btn-founder-arrow"></i>
-              </div>
-            </a>
-            
-            <div class="founder-social">
-              <a href="https://www.linkedin.com/in/sundxrr" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/ssundxr" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="trust-footer">
-        <div class="trust-footer-text">Committed to Enterprise Security & Compliance</div>
-        <div class="trust-badges-compact">
-          <span class="badge-compact"><i class="fas fa-shield-check"></i> SOC 2</span>
-          <span class="badge-compact"><i class="fas fa-lock"></i> ISO 27001</span>
-          <span class="badge-compact"><i class="fas fa-certificate"></i> GDPR</span>
-          <span class="badge-compact"><i class="fas fa-hospital"></i> HIPAA</span>
         </div>
       </div>
     </div>
@@ -471,7 +393,7 @@
     </div>
   </section>
 
-  <footer class="footer-enterprise">
+  <footer class="footer-enterprise dark-footer">
     <div class="container">
       <div class="footer-content-enterprise">
         <div class="footer-col-enterprise">
@@ -527,28 +449,20 @@
       });
     });
 
-    let lastScroll = 0;
     const nav = document.querySelector('.enterprise-nav');
     window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll > 100) {
+      if (window.pageYOffset > 100) {
         nav.classList.add('scrolled');
       } else {
         nav.classList.remove('scrolled');
       }
-      lastScroll = currentScroll;
     });
 
     function scrollToSolutions() {
       const solutionsSection = document.querySelector('#solutions');
       const offset = 80;
       const targetPosition = solutionsSection.getBoundingClientRect().top + window.pageYOffset - offset;
-      
-      window.scrollTo({ 
-        top: targetPosition, 
-        behavior: 'smooth' 
-      });
-      
+      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       setTimeout(() => {
         const learnMoreLink = document.querySelector('#solutions .solution-enterprise-card:first-child .link-enterprise');
         if (learnMoreLink) {
@@ -564,41 +478,22 @@
     if (form) {
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
-        
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>';
         formStatus.innerHTML = '';
-        
         const formData = new FormData(form);
         const firstName = formData.get('firstName');
-        
         try {
           const response = await fetch('https://formspree.io/f/xpwyekzw', {
             method: 'POST',
             body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
+            headers: {'Accept': 'application/json'}
           });
-          
           if (response.ok) {
             formStatus.style.color = '#28a745';
-            formStatus.innerHTML = `
-              <div style="background: rgba(40, 167, 69, 0.1); padding: 20px; border-radius: 8px; border: 1px solid rgba(40, 167, 69, 0.3); margin-top: 16px;">
-                <i class="fas fa-check-circle" style="font-size: 24px; margin-bottom: 12px;"></i>
-                <div style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Thank You, ${firstName}!</div>
-                <div style="font-size: 14px; line-height: 1.6; color: #495057;">
-                  Your inquiry has been received successfully. Our team will review and respond within 24 hours.
-                  <br><br>
-                  <strong>Inquiry Reference:</strong> #PRVR-${Date.now().toString().slice(-6)}
-                  <br><br>
-                  For urgent matters, WhatsApp us at <a href="https://wa.me/919944877921" target="_blank" style="color: #28a745;">+91 9944877921</a>
-                </div>
-              </div>
-            `;
+            formStatus.innerHTML = `<div style="background: rgba(40, 167, 69, 0.1); padding: 20px; border-radius: 8px; border: 1px solid rgba(40, 167, 69, 0.3); margin-top: 16px;"><i class="fas fa-check-circle" style="font-size: 24px; margin-bottom: 12px;"></i><div style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Thank You, ${firstName}!</div><div style="font-size: 14px; line-height: 1.6; color: #b0b0b0;">Your inquiry has been received successfully. Our team will review and respond within 24 hours.<br><br><strong>Inquiry Reference:</strong> #PRVR-${Date.now().toString().slice(-6)}<br><br>For urgent matters, WhatsApp us at <a href="https://wa.me/919944877921" target="_blank" style="color: #28a745;">+91 9944877921</a></div></div>`;
             submitBtn.innerHTML = '<i class="fas fa-check"></i> <span>Sent Successfully</span>';
             form.reset();
-            
             setTimeout(() => {
               submitBtn.disabled = false;
               submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Submit Inquiry</span>';
